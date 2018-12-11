@@ -7,6 +7,26 @@
         android:title="@string/nome_do_contato"
         app:actionViewClass="android.support.v7.widget.SearchView"
         />
-
- </menu>
-
+    <item android:id="@+id/Ordenar"
+        android:title="Ordenar"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/todos"
+                android:title="Todos"
+                app:showAsAction="never" />
+            <item android:id="@+id/amigos"
+                android:title="Amigos"
+                app:showAsAction="never" />
+            <item android:id="@+id/familia"
+                android:title="Familia"
+                app:showAsAction="never" />
+            <item android:id="@+id/trabalho"
+                android:title="Trabalho"
+                app:showAsAction="never" />
+            <item android:id="@+id/outro"
+                android:title="Outro"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
